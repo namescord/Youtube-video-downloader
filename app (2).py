@@ -9,7 +9,8 @@
 #         gunicorn
 #   2. New Web Service on Render -> connect the repo.
 #         Build command:  pip install -r requirements.txt
-#         Start command:  gunicorn app:app --timeout 600
+#         Start command:  gunicorn app:app
+#      (Port + timeout come from gunicorn.conf.py — do NOT add flags here.)
 #   3. Open the Render URL. Done. (No Cloudflare needed — this file IS the
 #      frontend too. If you later want the UI on Cloudflare, deploy preview.html
 #      there and point its fetch() calls at this Render URL.)
